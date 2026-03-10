@@ -1,0 +1,38 @@
+{
+    "name": "psc-acme/bundle-auth",
+    "description": "Package bundle-auth for psc-acme organization",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\BundleAuth\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.2",
+        "symfony/lock": "^7.0",
+        "psr/log": "^3.0",
+        "doctrine/doctrine-bundle": "^2.13",
+        "league/flysystem": "^3.0"
+    },
+    "require-dev": {
+        "behat/behat": "^3.14"
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
